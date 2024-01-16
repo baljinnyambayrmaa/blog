@@ -5,6 +5,6 @@ export const Trending = () => {
         <div>
             <p>Trending</p>
             
-        </div>ç
+        </div>
     )
 }
