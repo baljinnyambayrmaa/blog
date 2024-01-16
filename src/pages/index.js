@@ -2,18 +2,19 @@
 import { Inter } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { News } from '@/components/News'
-import { Content } from 'next/font/google'
-import { Trending } from '@/components/Trending'
-import { AllBlog } from '@/components/AllBlog'
+import { TrendingData } from '@/components/TrendingData'
+import { BlogData } from '@/components/BlogData'
 import { Footer } from '@/components/Footer'
+import { Detail } from '@/components/Detail'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-      <div className="flex flex-col gap-[100px]">
+      <div className="flex w-[326px] md:w-full flex-col gap-[100px]">
         <Header/>
         <News/>
-        <AllBlog/>
+        <TrendingData/>
+        <BlogData/>
         <Footer/>
       </div>
 

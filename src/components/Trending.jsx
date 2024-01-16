@@ -1,53 +1,18 @@
-import Image from "next/image"
+import Image from "next/image";
+import { TrendingData } from "./TrendingData";
 export const Trending = (props) => {
-    const { imgsrc, text } = props;
-    const Slides= [
-        {
-            imgsrc: "/Mountain.png",
-            text: "The Impact of Technology on the Workplace: How Technology is Changing"
-        },
-        {
-            imgsrc: "/Mountain.png",
-            text: "The Impact of Technology on the Workplace: How Technology is Changing"
-        },
-        {
-            imgsrc: "/Mountain.png",
-            text: "The Impact of Technology on the Workplace: How Technology is Changing"
-        },
-        {
-            imgsrc: "/Mountain.png",
-            text: "The Impact of Technology on the Workplace: How Technology is Changing"
-        }
-    ]
-    return (
-        <div className="">
-            <p>Trending</p>
-<<<<<<< HEAD
-            {Slides.map((el, i) => {
-            return (
-              <div>
-                <div>
-                  <Trending key={i} imgsrc={el.imgsrc} text={el.text} />
-                </div>
-              </div>
-            );
-          })}
-             <Image src={imgsrc}
-              width={293}
-              height={320}
-             className="w-[293px] h-[320px] object-scale-down "
-           />
-           <div>
-                <div>
-                    <p>Tecnology</p>
-                </div>
-                <div>
-                    <p>{text}</p>
-                </div>
-           </div> 
-=======
-            
->>>>>>> 7688e42a17a847808538ce12de5f0955a2d562c2
+  const { imgsrc, text } = props;
+  return (
+    <div className="relative w-[289px]">
+        <Image src={imgsrc} width={289} height={320} />
+        <div className="w-[230px] h-[120px] absolute bottom-5 left-8 gap-[16px] flex flex-col">
+            <p className="px-[10px] bg-[#4B6BFB] w-[97px]  text-white rounded-xl text-[14px]">
+                Technology
+            </p>
+            <p className="text-[18px] workSansText text-white">
+                {text}
+            </p>
         </div>
-    )
-}
+    </div>
+  );
+};
