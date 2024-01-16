@@ -22,6 +22,7 @@ export const Trending = (props) => {
     return (
         <div className="">
             <p>Trending</p>
+<<<<<<< HEAD
             {Slides.map((el, i) => {
             return (
               <div>
@@ -44,6 +45,9 @@ export const Trending = (props) => {
                     <p>{text}</p>
                 </div>
            </div> 
+=======
+            
+>>>>>>> 7688e42a17a847808538ce12de5f0955a2d562c2
         </div>
     )
 }
