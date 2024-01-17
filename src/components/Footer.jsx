@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <div className="bg-slate-100 flex justify-center workSansText">
       <div className="flex py-[64px] align-center flex-col gap-[30px] md:gap-[25px] ">
-        <div className="flex md:flex gap-[30px] justify-center-between w-full md:w-[1215px]">
+        <div className="flex flex-col md:flex gap-[30px] justify-center-between w-full md:w-[1215px]">
           <div className="flex flex-col w-[289px] gap-6">
             <div className=" hidden md:flex md:w-[289px] flex-col gap-[12px]">
               <p className="text-black size-[18px]">About</p>
@@ -23,7 +23,7 @@ export const Footer = () => {
               <p>Phone : 880 123 456 789</p>
             </div>
           </div>
-          <div className="md:flex flex-col hidden text-center w-full md:w-[591px]">
+          <div className="md:flex flex-col text-center w-full md:w-[591px]">
             <p>Home</p>
             <p>Blog</p>
             <p>Contact</p>

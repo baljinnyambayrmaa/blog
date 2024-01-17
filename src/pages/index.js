@@ -5,9 +5,8 @@ import { News } from '@/components/News'
 import { TrendingData } from '@/components/TrendingData'
 import { BlogData } from '@/components/BlogData'
 import { Footer } from '@/components/Footer'
-import { Detail } from '@/components/Detail'
-import { ContactUs } from '@/components/ContactUs'
-import { PageNotFound } from '@/components/PageNotFound'
+import Carousel from '@/components/Caruosel'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,8 +17,6 @@ export default function Home() {
         <TrendingData/>
         <BlogData/>
         <Footer/>
-        <PageNotFound/>
       </div>
-
   )
 }

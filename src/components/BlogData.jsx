@@ -85,7 +85,7 @@ export const BlogData = (props) => {
         </div>
       </div>
       <div className="w-full">
-        <div className=" flex justify-center md:flex-wrap gap-4 mt-10">
+        <div className=" flex justify-center flex-col md:flex-row md:flex-wrap gap-4 mt-10">
           {blogs.map((el, i) => {
             return (
               <AllBlog

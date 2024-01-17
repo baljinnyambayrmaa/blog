@@ -4,7 +4,6 @@ import { Input } from "postcss"
 export const ContactUs=() => {
     return (
         <div>
-            <Header/>
             <div className="w-full flex justify-center">
                 <div className="md:w-[895px] md:h-[895px] flex flex-col justify-center items-center gap-[30px]  max-auto">
                     <div className="flex-col flex items-center gap-[20px]  mx-auto">
@@ -42,7 +41,6 @@ export const ContactUs=() => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
