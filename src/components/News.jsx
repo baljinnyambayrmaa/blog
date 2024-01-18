@@ -25,18 +25,18 @@ export const News=() => {
                     width={1216} 
                     height={600}
                     src={images[currentIndex]}
-                    alt={`Image ${currentIndex + 1}`} />
+                    alt={`Image ${currentIndex + 1}`} className="h-[600px]"/>
                 </div>
                 
                 <div className="flex items-center justify-end">
-                    <button className="w-10 h-10 border-2 border-slate-300 rounded-[10px] flex items-center justify-center "><GrFormPrevious size={30}/></button>
-                    <button className="w-10 h-10 border-2 border-slate-300 rounded-[10px] flex items-center justify-center "> <GrFormNext size={30}/></button>
+                    <button onClick={handePrev}  className="w-10 h-10 border-2 border-slate-300 rounded-[10px] flex items-center justify-center "><GrFormPrevious size={30}/></button>
+                    <button onClick={handelNext} className="w-10 h-10 border-2 border-slate-300 rounded-[10px] flex items-center justify-center "> <GrFormNext size={30}/></button>
                 </div>
                 
-                <div className="flex p-10 flex-col bg-white w-[598px] gap-8 absolute bottom-3 left-2 rounded-md">
+                <div className="flex p-10 flex-col bg-white w-[598px] gap-8 absolute bottom-12 left-2 rounded-md">
                     <div className="flex flex-col gap-4 ">
-                        <p onClick={handePrev} className="px-[10px] bg-[#4B6BFB] w-[97px]  text-white rounded-xl text-[14px]">Technology</p>
-                        <p onClick={handelNext} className="text-[36px] workSansText ">Grid system for better Design User Interface</p>
+                        <p className="px-[10px] bg-[#4B6BFB] w-[97px]  text-white rounded-xl text-[14px]">Technology</p>
+                        <p  className="text-[36px] workSansText ">Grid system for better Design User Interface</p>
                     </div>
                     <p className="text-[14] workSansText text-[#97989F]">August 20, 2022</p>
                 </div>

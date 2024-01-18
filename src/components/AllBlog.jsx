@@ -1,6 +1,18 @@
 import Image from "next/image"
+import { useRouter } from "next/router";
 export const AllBlog = (props) => {
-    const {img, text, title, date}= props;
+    const {
+        img="",
+         text="Technology",
+         title="",
+         date="",
+        articleID="",
+        }= props;
+    const router = useRouter();
+    const handeClick=()=> {
+        router.push('/blog/${articleID}');
+    };
+
     return (
         <div className="flex workSansText">
             <div className="flex flex-col md:flex-wrap w-[326px] md:w-[392px] gap-4 p-4 border rounded-2xl">

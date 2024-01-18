@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <div className="flex md:text-center justify-between w-[390px] md:mx-auto md:w-[1130px] items-center p-[20px] md:py-8 workSansText">
+    <div className="flex md:text-center justify-between w-[390px] md:mx-auto md:w-[1130px] items-center p-[20px] md:py-8 workSansText sticky top-0 bg-white z-10 ">
       <Image width={158} height={36} src="/Logo.png" className="" />
       <div className="md:flex hidden justify-center gap-10">
         <Link href={"/"}>Home</Link>
